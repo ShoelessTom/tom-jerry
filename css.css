@@ -1,7 +1,7 @@
 body {
-    background-image: url(https://i.ytimg.com/vi/fwYmnlXHTOg/maxresdefault.jpg);
+    background: url(https://i.ytimg.com/vi/fwYmnlXHTOg/maxresdefault.jpg) no-repeat center fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 a { color: inherit; 
     text-decoration: none;
@@ -29,5 +29,5 @@ a { color: inherit;
     font-size: large;
 }
 .jerh {
-    margin-top: 115px;
+    margin-top: 29%;
 }
