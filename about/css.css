@@ -21,3 +21,6 @@ a {
 .nav {
   text-align: center;
 }
+.wiki {
+  text-decoration: underline;
+}
