@@ -2,19 +2,19 @@
 document.getElementById("btn").addEventListener("click", btnClicked);
 //seting the variables as the values of the input questions
 function btnClicked() {
-  let q1l = +document.getElementById("qone").value;
-  let q2l = document.getElementById("qtwo").value;
-  let q3l = document.getElementById("qtree").value;
-  let q4l = document.getElementById("qfour").value;
+  let q1 = +document.getElementById("qone").value;
+  let q2 = document.getElementById("qtwo").value.toLowerCase();
+  let q3 = document.getElementById("qtree").value.toLowerCase();
+  let q4 = document.getElementById("qfour").value.toLowerCase();
   // useful for the results
   let rez1 = 0;
   let rez2 = 0;
   let rez3 = 0;
   let rez4 = 0;
-  let q1 = q1l;
-  let q2 = q2l.toLowerCase();
-  let q3 = q3l.toLowerCase();
-  let q4 = q4l.toLowerCase();
+  // let q1 = q1l;
+  // let q2 = q2l.toLowerCase();
+  // let q3 = q3l.toLowerCase();
+  // let q4 = q4l.toLowerCase();
   console.log(q2);
   console.log(q3);
   console.log(q4);
