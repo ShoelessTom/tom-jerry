@@ -20,20 +20,20 @@ function btnClicked() {
   console.log(q4);
   console.log(q2);
   //Checking if a user has all the questions correct
-  if (q1 === 1941 && q2 === "william hanna" && q3 === "cat" && q4 === "mouse") {
-    document.getElementById("results").innerHTML =
-      "Congrats, Everythings correct";
-    document.getElementById("results").style.color = "green";
-  } else if (
-    q1 === 1941 &&
-    q2 === "joseph roland barbera" &&
-    q3 === "cat" &&
-    q4 === "mouse"
-  ) {
-    document.getElementById("results").style.color = "green";
-    document.getElementById("results").innerHTML =
-      "Congrats, Everythings  correct";
-  }
+  // if (q1 === 1941 && q2 === "william hanna" && q3 === "cat" && q4 === "mouse") {
+  //   document.getElementById("results").innerHTML =
+  //     "Congrats, Everythings correct";
+  //   document.getElementById("results").style.color = "green";
+  // } else if (
+  //   q1 === 1941 &&
+  //   q2 === "joseph roland barbera" &&
+  //   q3 === "cat" &&
+  //   q4 === "mouse"
+  // ) {
+  //   document.getElementById("results").style.color = "green";
+  //   document.getElementById("results").innerHTML =
+  //     "Congrats, Everythings  correct";
+  // }
 
   //Giving feedback on individual right questions
   if (q1 === 1941) {
@@ -48,7 +48,7 @@ function btnClicked() {
     document.getElementById("feedback1").style.color = "red";
   }
 
-  if (q2 === "william Hanna") {
+  if (q2 === "william hanna" || q2 === "joseph roland barbera") {
     console.log("2nd correct");
     document.getElementById("feedback2").innerHTML = "Correct!";
     document.getElementById("feedback2").style.color = "green";
@@ -107,33 +107,33 @@ function btnClicked() {
   //   document.getElementById("feedback4").innerHTML = "Wrong!, Jerry is a mouse";
   //   document.getElementById("feedback4").style.color = "red";
   //   rez4 = 1;
-// }
-// calculating the final result in percentage
+  // }
+  // calculating the final result in percentage
 
-final = ((4 - rez1 - rez2 - rez3 - rez4) / 4) * 100;
-//final as a fraction
-ffraction = 4 - rez1 - rez2 - rez3 - rez4;
+  final = ((4 - rez1 - rez2 - rez3 - rez4) / 4) * 100;
+  //final as a fraction
+  ffraction = 4 - rez1 - rez2 - rez3 - rez4;
 
-//presonalized msgs based on the final results.
-if (final > 99) {
-  // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
-  let msg = `WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ${final}% aka ${ffraction}/4`;
-  document.getElementById("results").innerHTML = msg;
-  document.getElementById("results").style.color = "green";
-} else if (final > 70) {
-  // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
-  let msg = `Hmm, you might have seen the show when you were little. You scored ${final}% aka ${ffraction}/4`;
-  document.getElementById("results").innerHTML = msg;
-  document.getElementById("results").style.color = "blue";
-} else if (final > 50) {
-  // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
-  let msg = `You slightly remember the show, heres your final score: ${final}% aka ${ffraction}/4`;
-  document.getElementById("results").innerHTML = msg;
-  document.getElementById("results").style.color = "yellow";
-} else {
-  // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
-  let msg = `Woah you know NOTHING about this show, your score is ${final}% aka ${ffraction}/4`;
-  document.getElementById("results").innerHTML = msg;
-  document.getElementById("results").style.color = "red";
-}
+  //presonalized msgs based on the final results.
+  if (final > 99) {
+    // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
+    let msg = `WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ${final}% aka ${ffraction}/4`;
+    document.getElementById("results").innerHTML = msg;
+    document.getElementById("results").style.color = "green";
+  } else if (final > 70) {
+    // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
+    let msg = `Hmm, you might have seen the show when you were little. You scored ${final}% aka ${ffraction}/4`;
+    document.getElementById("results").innerHTML = msg;
+    document.getElementById("results").style.color = "blue";
+  } else if (final > 50) {
+    // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
+    let msg = `You slightly remember the show, heres your final score: ${final}% aka ${ffraction}/4`;
+    document.getElementById("results").innerHTML = msg;
+    document.getElementById("results").style.color = "yellow";
+  } else {
+    // document.getElementById("results").innerHTML = "WOW, YOU MUST BE A SUPER TOM AND JERRY FAN!!!!, YOU SCORED ";
+    let msg = `Woah you know NOTHING about this show, your score is ${final}% aka ${ffraction}/4`;
+    document.getElementById("results").innerHTML = msg;
+    document.getElementById("results").style.color = "red";
+  }
 }
