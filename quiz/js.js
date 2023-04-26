@@ -10,16 +10,16 @@ function btnClicked() {
   let rez1 = 0;
   let rez2 = 0;
   let rez3 = 0;
-  let rez4 = 0;
+  let rez4 =  0;
   // let q1 = q1l;
   // let q2 = q2l.toLowerCase();
   // let q3 = q3l.toLowerCase();
   // let q4 = q4l.toLowerCase();
-  console.log(q2);
-  console.log(q3);
-  console.log(q4);
-  console.log(q2);
-  //Checking if a user has all the questions correct
+  // console.log(q2);
+  // console.log(q3);
+  // console.log(q4);
+  // console.log(q2);
+  // //Checking if a user has all the questions correct
   // if (q1 === 1941 && q2 === "william hanna" && q3 === "cat" && q4 === "mouse") {
   //   document.getElementById("results").innerHTML =
   //     "Congrats, Everythings correct";
