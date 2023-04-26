@@ -7,10 +7,11 @@ function btnClicked() {
   let q3 = document.getElementById("qtree").value.toLowerCase();
   let q4 = document.getElementById("qfour").value.toLowerCase();
   // useful for the results
-  let rez1 = 0;
-  let rez2 = 0;
-  let rez3 = 0;
-  let rez4 = 0;
+  let total = 0 
+  // let rez1 = 0;
+  // let rez2 = 0;
+  // let rez3 = 0;
+  // let rez4 = 0;
   // let q1 = q1l;
   // let q2 = q2l.toLowerCase();
   // let q3 = q3l.toLowerCase();
@@ -40,9 +41,9 @@ function btnClicked() {
     console.log("first right");
     document.getElementById("feedback1").innerHTML = "Correct!";
     document.getElementById("feedback1").style.color = "green";
+    total++;
   } else {
     console.log("first wrong");
-    rez1 = 1;
     document.getElementById("feedback1").innerHTML =
       "Tom and Jerry was created in 1941";
     document.getElementById("feedback1").style.color = "red";
@@ -52,34 +53,37 @@ function btnClicked() {
     console.log("2nd correct");
     document.getElementById("feedback2").innerHTML = "Correct!";
     document.getElementById("feedback2").style.color = "green";
+    total++;
   } else {
     console.log("2nd wrong");
     document.getElementById("feedback2").innerHTML =
       "WRONG!, William Hanna and Joseph Roland Barbera were the creators of Tom and Jerry";
     document.getElementById("feedback2").style.color = "red";
-    rez2 = 1;
+
   }
 
   if (q3 === "cat") {
     console.log("3rd correct");
     document.getElementById("feedback3").innerHTML = "Correct!";
     document.getElementById("feedback3").style.color = "green";
+    total++;
   } else {
     console.log("3rd wrong");
     document.getElementById("feedback3").innerHTML = "WRONG! Toms a cat";
     document.getElementById("feedback3").style.color = "red";
-    rez3 = 1;
+    
   }
 
   if (q4 === "mouse") {
     console.log("4th correct");
     document.getElementById("feedback4").innerHTML = "Correct!";
     document.getElementById("feedback4").style.color = "green";
+    total++;
   } else {
     console.log("4th wrong");
     document.getElementById("feedback4").innerHTML = "Wrong!, Jerry is a mouse";
     document.getElementById("feedback4").style.color = "red";
-    rez4 = 1;
+    
   }
 
   // if (q1 !== 1941) {
@@ -110,9 +114,9 @@ function btnClicked() {
   // }
   // calculating the final result in percentage
 
-  final = ((4 - rez1 - rez2 - rez3 - rez4) / 4) * 100;
+  final = (total / 4) * 100;
   //final as a fraction
-  ffraction = 4 - rez1 - rez2 - rez3 - rez4;
+  ffraction = total;
 
   //presonalized msgs based on the final results.
   if (final > 99) {
