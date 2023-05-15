@@ -7,7 +7,7 @@ function btnClicked() {
   let q3 = document.getElementById("qtree").value.toLowerCase();
   let q4 = document.getElementById("qfour").value.toLowerCase();
   // useful for the results
-  let total = 0 
+  let total = 0;
   // let rez1 = 0;
   // let rez2 = 0;
   // let rez3 = 0;
@@ -59,7 +59,6 @@ function btnClicked() {
     document.getElementById("feedback2").innerHTML =
       "WRONG!, William Hanna and Joseph Roland Barbera were the creators of Tom and Jerry";
     document.getElementById("feedback2").style.color = "red";
-
   }
 
   if (q3 === "cat") {
@@ -71,7 +70,6 @@ function btnClicked() {
     console.log("3rd wrong");
     document.getElementById("feedback3").innerHTML = "WRONG! Toms a cat";
     document.getElementById("feedback3").style.color = "red";
-    
   }
 
   if (q4 === "mouse") {
@@ -83,7 +81,6 @@ function btnClicked() {
     console.log("4th wrong");
     document.getElementById("feedback4").innerHTML = "Wrong!, Jerry is a mouse";
     document.getElementById("feedback4").style.color = "red";
-    
   }
 
   // if (q1 !== 1941) {

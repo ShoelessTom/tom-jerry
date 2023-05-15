@@ -12,7 +12,7 @@ a {
 .borderh {
   border-bottom: 10px;
   border-radius: 10px;
-}
+}                                 
 .nav {
   text-align: center;
 }
@@ -25,7 +25,7 @@ a {
 }
 
 .mono {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   font-size: large;
 }
